@@ -1,0 +1,797 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: white;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* navigation bar below here */
+#nav-bar{
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.774);
+}
+
+#nav-bar-logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#nav-logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#nav-logo-1{
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    justify-content: start;
+}
+
+
+#button-bar{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    margin-right: 65px;
+}
+/* nav buttons below */
+.nav-buttons{
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    background: transparent;
+    color: white;
+    border: none;
+    transition: transform 0.9s ease-in-out;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7),
+               0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-buttons:hover {
+    transform: rotate(360deg);
+}
+.nav-buttons:focus {
+    outline: 2px solid #fff; /* or another color that contrasts well */
+    outline-offset: 4px;
+}
+
+#big-container{
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#big-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+/* main container settings below here */
+.main-containers{
+    width: 100%;
+    padding: 50px 20px;
+}
+/* First container below */
+#first-container{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #d4d4d494;
+}
+/*left top container below */
+#first-container-left{
+    width: 15%;
+    height: 100%;
+}
+/* top middle container below */
+#first-container-middle{
+    width: 70%;
+    height: 100%;
+
+}
+#hook-sentence-one{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: black;
+}
+#hook-sentence-two{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+}
+/* top right container below */
+#first-container-right{
+    width: 15%;
+    height: 100%;
+
+}
+/* about container below here */
+#about-container{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+}
+    #about-container-main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+        .about-container-sides{
+            width: 50%;
+            height: 100%;
+        }
+            #about-container-left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+                #about-left-buffer{
+                    width: 100%;
+                    height: 15%;
+                }
+                #about-box{
+                    width:50%;
+                    height: 85%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    #about-header{
+                        width: 100%;
+                        height: 20%;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        display: flex;
+                        font-size: 40px;
+                    }
+                    #about-bio{
+                        width: 100%;
+                        height: 70%;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+            #about-container-right{
+                background-image: url(big-img.jpg);
+            }
+/* third container below here */
+#third-container{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+    #third-container-buffer{
+        width: 100%;
+        height: 10%;
+    }
+    #third-container-main{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+        #service-explanation{
+            width: 50%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+            #service-header{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                font-size: 50px;
+                justify-content: center;
+            }
+            #service-paragraph{
+                width: 100%;
+                height: 70%;
+                display: flex;
+                font-size: 20px;
+                justify-content: center;
+                text-align: center;
+            }
+        #service-box-one{
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+            .service-boxes-one{
+                width: 30%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                background-color: #d4d4d494;
+            }
+                #concrete-header{
+                    width: 100%;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                #concrete-bio{
+                    width: 100%;
+                    height: 70%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            #SSD-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+                #SSD-header{
+                    width: 100%;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                #SSD-bio{
+                    width: 100%;
+                    height: 70%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 20px;
+                }
+        #service-box-two{
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+            .service-boxes-two{
+                width: 30%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                background-color: #d4d4d494;
+            }
+                #swimming-pools-header{
+                    width: 100%;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                #swimming-pools-bio{
+                    width: 100%;
+                    height: 70%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 20px;
+                }
+                #sports-courts-header{
+                    width: 100%;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                #sports-courts-bio{
+                    width: 100%;
+                    height: 70%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            #swimming-pools-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+/* GALLERY CONTAINER BELOW */
+#gallery-container {
+    width: 100%;
+    height: 1000px;
+    display: none; /* Ensure this is applied dynamically */
+    flex-direction: row;
+    min-height: 1000px; /* Ensures proper height if needed */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#gallery-container.visible {
+    display: flex; /* Make sure the container is displayed correctly */
+}
+
+.gallery-box {
+    flex: 1; /* Ensures equal width distribution */
+    height: 100%;
+
+}
+#gallery-box-middle {
+    width: 90%; /* Adjust width as needed */
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.picture-boxes {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    gap: 10px;
+}
+.image-box {
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-box:hover img {
+    transform: scale(1.5);
+}
+/* SECOND COTAINER BELOW */
+#second-container{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* second left container below */
+#second-container-left{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#map-container {
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+#map-container iframe {
+    width: 100%;
+    height: 100%; /* Adjust as needed */
+}
+/* second middle container below */
+#second-container-middle{
+    width: 33%;
+    height: 100%;
+}
+    #contact-us{
+    width: 100%;
+    height: 20%;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+}
+#contact-info-container{
+    width: 100%;
+    height: 80%;
+}
+.contact-boxes{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    color: black;
+}
+#address{
+    color: red;
+}
+#email-address{
+    color: red;
+}
+/* second right container below */
+#second-container-right{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook-button {
+    display: inline-block;
+    background-color: #3b5998; /* Facebook blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.facebook-button:hover {
+    background-color: #2d4373; /* Darker blue on hover */
+}
+/* Media Queries for Tablets and Small Devices */
+@media only screen and (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #nav-bar-logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #button-bar {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .nav-buttons {
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #big-container {
+        height: 600px;
+    }
+
+    #first-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #first-container-left,
+    #first-container-right {
+        width: 100%;
+        height: auto;
+    }
+
+    #first-container-middle {
+        width: 100%;
+        text-align: center;
+    }
+
+    #second-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #second-container-left,
+    #second-container-middle,
+    #second-container-right {
+        width: 100%;
+        height: auto;
+    }
+
+    #map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-boxes {
+        height: auto;
+        font-size: 18px;
+    }
+
+    #gallery-container {
+        height: auto;
+    }
+
+    .picture-boxes {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-bios,
+    .service-boxes {
+        display: none; /* This will hide both the bios and images */
+    }
+} /* This closing brace was missing */
+
+@media only screen and (max-width: 480px) {
+    .nav-buttons {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #big-container {
+        height: 400px;
+    }
+
+    #first-container {
+        height: auto;
+        padding: 10px;
+    }
+
+    #first-container-left,
+    #first-container-right {
+        width: 100%;
+    }
+
+    #first-container-middle {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #second-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #second-container-left,
+    #second-container-middle,
+    #second-container-right {
+        width: 100%;
+        height: auto;
+    }
+
+    #map-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-boxes {
+        font-size: 16px;
+    }
+
+    .service-cards {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    #gallery-container {
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .picture-boxes {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .image-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-bios,
+    .service-boxes {
+        display: none; /* This will hide both the bios and images */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* General Styles for Mobile */
+@media screen and (max-width: 768px) {
+    /* Navigation bar */
+    #nav-bar {
+        height: 60px;
+    }
+
+    #nav-logo {
+        width: 30%;
+    }
+
+    #button-bar {
+        width: 70%;
+        margin-right: 20px;
+    }
+
+    .nav-buttons {
+        width: 100px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /* First Container */
+    #first-container {
+        height: 300px;
+        flex-direction: column;
+    }
+
+    #hook-sentence-one {
+        font-size: 2rem;
+    }
+
+    #hook-sentence-two {
+        font-size: 15px;
+    }
+
+    /* About Container */
+    #about-container {
+        height: auto;
+    }
+
+    #about-container-main {
+        flex-direction: column;
+    }
+
+    #about-box {
+        width: 90%;
+    }
+
+    #about-header {
+        font-size: 30px;
+    }
+
+    #about-bio {
+        font-size: 15px;
+    }
+
+    /* Service Section */
+    #third-container {
+        height: auto;
+    }
+
+    .service-boxes-one, .service-boxes-two {
+        width: 100%;
+        height: 30%;
+    }
+
+    #service-header {
+        font-size: 40px;
+    }
+
+    #service-paragraph {
+        font-size: 18px;
+    }
+
+    /* Gallery */
+    #gallery-container {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+    #SSD-img{
+        display: none;
+    }
+    #swimming-pools-img{
+        display: none;
+    }
+    /* Contact Section */
+    #second-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #second-container-left, #second-container-middle, #second-container-right {
+        width: 100%;
+    }
+
+    #contact-us {
+        font-size: 30px;
+    }
+
+    .contact-boxes {
+        font-size: 20px;
+    }
+
+    /* Map */
+    #map-container {
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    #button-bar {
+        margin-right: 30px;
+    }
+
+    .nav-buttons {
+        font-size: 20px;
+    }
+
+    #service-header {
+        font-size: 45px;
+    }
+
+    #service-paragraph {
+        font-size: 18px;
+    }
+}
